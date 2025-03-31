@@ -1,0 +1,53 @@
+// input:not([type=checkbox]):not([type=submit]),
+select,
+textarea,
+.form-control.form-select,
+.form-control {
+   display: block;
+   height: 42px;
+   max-width: 100%;
+   margin: 0;
+   border: 0;
+   padding: 5px 24px;
+   font-size: 14px;
+   color: $black;
+   font-weight: 400;
+   line-height: 16.18px;
+   font-family: 'New Rail Alphabet';
+   outline: none;
+   border-radius: 42px;
+   transition: 0.3s;
+   background: $clr-light-gray;
+
+   &:focus {
+      outline: none;
+   }
+
+   &::placeholder {
+      color: $black;
+      opacity: 1;
+   }
+
+   &.form-control-outline {
+      border: 1.07px solid $white;
+      border-radius: 0;
+      background-color: transparent;
+      height: 50px;
+      color: $white;
+
+      &::placeholder {
+         color: $white;
+         opacity: 1;
+      }
+   }
+}
+
+select {
+   appearance: auto;
+
+   &.form-control.form-select {
+      appearance: auto;
+      text-indent: 18px;
+      padding-left: 0;
+   }
+}

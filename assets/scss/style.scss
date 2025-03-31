@@ -1,0 +1,24 @@
+/*Abstracts*/
+@import "abstracts/variable";
+
+/*Base*/
+@import "base/reset";
+@import "base/typography";
+
+/*Component*/
+@import "component/buttons";
+@import "component/form-control";
+@import "component/table";
+@import "component/accordian";
+@import "component/radio";
+
+/*Layouts*/
+@import "layouts/header";
+@import "layouts/footer";
+
+/*Pages*/
+@import "pages/home";
+
+/*Vendors*/
+@import "vendors/slickSlider";
+@import "vendors/lines";

@@ -1,0 +1,44 @@
+.form-group {
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.form-control {
+  position: relative;
+  border: 0.87px solid #d0d0d0;
+  min-height: 42px;
+  height: auto;
+  width: 100%;
+  color: #213559;
+  font-family: 'New Rail Alphabet';
+  font-size: 12.22px;
+  line-height: 15px;
+  text-align: left;
+  padding: 5px 18px;
+  border-radius: 0;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+textarea {
+  resize: none;
+  padding: 15px 18px;
+
+  &.form-control {
+    resize: none;
+    padding: 15px 18px 10px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,30 @@
+/*colors*/
+$white: #fff;
+$black: #000;
+$clr-primary: #322D2D;
+$clr-secondary: #666666;
+$clr-accent: #667744;
+$clr-light-green: #00B67A;
+$clr-light-gray: #D9D9D9;
+$clr-extra-light-gray: #FAFAF8;
+$clr-dark-gray: #F9F9F9;
+$clr-yellow: #DEA453;
+$clr-light-yellow: #F0EEE6;
+$clr-silver: #D6D5D5;
+$clr-light-silver: #FCFCFC;
+$clr-dark-silver: #919798;
+
+
+$clr-primary-gradient: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+$clr-primary-gradient-hover: linear-gradient(270deg, #C09F41 -0.61%, #D0AE52 25.19%, #E4C267 46.69%, #DBB95E 90.77%);
+
+$clr-secondary-gradient: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+
+$clr-body-gradient: linear-gradient(180deg, rgba(243, 243, 243, 0.75) 0%, rgba(184, 184, 184, 0.8) 59.38%, rgba(243, 243, 243, 0.25) 100%);
+
+/*media query*/
+$large-desktops: "max-width: 1440px";
+$portrait-tablets: "max-width: 1199px";
+$tablets: "max-width: 991px";
+$landscape-phones: "max-width: 767px";
+$portrait-phones: "max-width: 575px";

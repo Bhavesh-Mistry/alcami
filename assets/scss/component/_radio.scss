@@ -1,0 +1,131 @@
+.custom-radio {
+   position: relative;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+
+   input {
+      display: none;
+   }
+
+   .radio-label {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.1;
+      font-family: 'New Rail Alphabet';
+      color: $clr-primary;
+   }
+
+   .radio-circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1.01px solid $clr-dark-silver;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::after {
+         content: "";
+         width: 8px;
+         height: 8px;
+         background: transparent;
+         border-radius: 50%;
+         transform: scale(0);
+         transition: transform 0.2s ease-in-out;
+      }
+   }
+
+   input:checked+.radio-circle::after {
+      transform: scale(1);
+      background: $clr-secondary-gradient;
+   }
+
+   input:checked+.radio-circle {
+      background-color: transparent;
+      z-index: 1;
+      border: 0;
+   }
+
+   input:checked+.radio-circle::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1.5px;
+      background: $clr-primary-gradient;
+      border-radius: inherit;
+      text-transform: capitalize;
+      -webkit-mask:
+         linear-gradient(white, white) content-box,
+         linear-gradient(white, white);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+   }
+
+   &.cr-with-img {
+      justify-content: center;
+      flex-direction: column;
+      padding: 12px;
+      border-radius: 6px;
+      width: 150px;
+      height: 178px;
+      background-color: $clr-dark-gray;
+
+      &:hover {
+         box-shadow: inset 0 0 0 1px $clr-yellow;
+      }
+
+      .radio-image {
+         object-fit: contain;
+         transition: transform 0.2s ease-in-out;
+         margin: 20px 0 0;
+      }
+
+      .radio-label {
+         color: $clr-dark-silver;
+         position: absolute;
+         top: 10px;
+         left: 30px;
+      }
+
+      .best-seller {
+         background: $clr-secondary-gradient;
+         color: $white;
+         text-transform: uppercase;
+         font-size: 10.26px;
+         line-height: 1;
+         padding: 4px 8px;
+         border-radius: 6px 0 6px 0;
+         font-weight: 700;
+         font-family: 'New Rail Alphabet';
+         position: absolute;
+         bottom: 0;
+         right: 0;
+      }
+
+      .radio-circle {
+         position: absolute;
+         top: 10px;
+         left: 10px;
+      }
+
+      input:checked~.radio-label {
+         background: $clr-secondary-gradient;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+
+      input:checked~.radio-image {
+         transform: scale(1.05);
+      }
+
+      input:checked+.radio-circle::after {
+         opacity: .5;
+      }
+
+   }
+}

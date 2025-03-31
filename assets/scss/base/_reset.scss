@@ -1,0 +1,60 @@
+:root {
+   font-family: 'New Rail Alphabet';
+}
+
+// Reset margins, padding, and borders
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+
+   &:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+
+   &:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+}
+
+
+ul,
+ol {
+   list-style: none;
+}
+
+
+a {
+   text-decoration: none;
+   color: inherit;
+
+   &:focus {
+      outline: none;
+   }
+}
+
+
+button,
+input,
+textarea {
+   outline: none;
+}
+
+
+button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+
+img,
+video {
+   max-width: 100%;
+}

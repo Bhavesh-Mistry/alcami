@@ -1,0 +1,82 @@
+.accordion {
+   border: 0;
+
+   .accordion-item {
+      border: 0;
+      border-bottom: 1px solid $clr-primary;
+      margin: 0 0 16px;
+
+      @media ($portrait-tablets) {
+         margin: 0 0 10px;
+      }
+
+      .accordion-header {
+         border: 0;
+         background-color: transparent;
+
+         .accordion-button {
+            color: $clr-primary;
+            font-family: 'New Rail Alphabet';
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 1.2;
+            border: 0;
+            padding-inline: 24px;
+            padding-block: 22px;
+            text-align: left;
+
+            @media ($portrait-tablets) {
+               padding-inline: 22px;
+               padding-block: 18px;
+               font-size: 18px;
+            }
+
+            &:focus {
+               box-shadow: none;
+            }
+
+            &:last-of-type {
+               &.collapsed {
+                  border-radius: 0;
+               }
+            }
+
+            &:not(.collapsed) {
+               background-color: transparent;
+
+               &:after {
+                  content: "-";
+                  font-size: 30px;
+                  font-weight: 500;
+                  color: $clr-primary;
+                  line-height: 1;
+               }
+            }
+
+            &:after {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               content: "+";
+               font-size: 22px;
+               font-weight: 500;
+               color: $clr-primary;
+               background: none;
+               line-height: 1;
+            }
+
+         }
+      }
+
+      .accordion-body {
+         color: $clr-secondary;
+         font-family: 'New Rail Alphabet';
+         font-weight: 300;
+         font-size: 16px;
+         line-height: 1.5;
+         padding-inline: 24px;
+         background-color: $clr-dark-gray;
+         text-align: left;
+      }
+   }
+}

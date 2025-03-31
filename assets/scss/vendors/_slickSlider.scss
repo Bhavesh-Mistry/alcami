@@ -1,0 +1,83 @@
+.slick-slider {
+  .slick-list {
+    padding: 0px 0;
+    margin: 0 -16px;
+
+    // @media ($portrait-phones) {
+    //   margin: 0 -10px;
+    // }
+
+    .slick-slide {
+      margin: 0 16px;
+
+      // @media ($portrait-phones) {
+      //   margin: 0 10px;
+      // }
+    }
+  }
+}
+
+.sliderArrows {
+  .slick-arrow {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 1;
+    color: $clr-primary;
+    border: 1.01px solid $clr-primary;
+    background-color: transparent;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $clr-primary;
+    }
+
+    &.slick-disabled {
+      pointer-events: none;
+      opacity: .6;
+    }
+  }
+}
+
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  line-height: 0;
+  margin: 32px 0 0;
+
+  li {
+    line-height: 0;
+
+    button {
+      overflow: hidden;
+      padding: 0;
+      width: 8px;
+      height: 8px;
+      border: 1.01px solid $clr-primary;
+      border-radius: 50%;
+      background-color: transparent;
+      font-size: 0;
+      line-height: 0;
+
+    }
+
+    &.slick-active {
+      button {
+        background-color: $clr-primary;
+      }
+    }
+  }
+}

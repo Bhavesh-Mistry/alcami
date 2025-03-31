@@ -1,0 +1,1616 @@
+/*banner section start*/
+.banner-sec {
+  position: relative;
+  margin-top: 48px;
+  overflow: auto;
+  padding: 150px 0 40px;
+  transition: all .3s;
+  overflow: hidden;
+
+  @media($portrait-tablets) {
+    padding: 120px 0 60px;
+  }
+
+  &:before {
+    content: "";
+    background: $clr-body-gradient;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 77%;
+    display: block;
+    z-index: -1;
+  }
+
+  .bs-desc {
+    padding: 0px 0 0;
+    position: relative;
+
+    @media($portrait-tablets) {
+      margin: 50px 0 0;
+    }
+
+    @media($portrait-phones) {
+      margin: 40px 0 0;
+      text-align: center;
+    }
+
+    p {
+      color: $clr-primary;
+      font-family: 'New Rail Alphabet';
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 300;
+      margin: 0px 0 30px;
+      background: linear-gradient(90.05deg, rgba(255, 255, 255, 0.36) 0.04%, rgba(252, 252, 252, 0.12) 102.54%);
+      padding: 5px 16px 5px 8px;
+      border-radius: 46px;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+
+      @media($portrait-phones) {
+        flex-wrap: wrap;
+        padding: 16px;
+      }
+
+      span {
+        background: rgba($white, .7);
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 36px;
+
+        i {
+          color: $clr-yellow;
+          font-size: smaller;
+        }
+      }
+    }
+
+    h3 {
+      color: $clr-primary;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 56px;
+      line-height: 1.1;
+      letter-spacing: -1.33px;
+      margin: 0px 0 40px 0;
+
+      @media($portrait-phones) {
+        font-size: 30px;
+      }
+    }
+
+    h5 {
+      font-size: 72px;
+      line-height: 1.1;
+      font-weight: 700;
+      margin: 0px 24px 0 0;
+      max-width: 183px;
+      background: $clr-primary-gradient ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media($portrait-phones) {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 0 24px;
+      }
+
+      small {
+        font-size: 25px;
+        line-height: 1.1;
+        background: $clr-primary-gradient ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 10px;
+      }
+
+      span {
+        display: block;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.1;
+        color: $clr-primary;
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: $clr-primary;
+      }
+    }
+
+    .btn {
+      margin: 40px 0 0;
+      height: auto;
+      padding: 16px 28px;
+      line-height: 1;
+      width: 182px;
+    }
+
+  }
+
+  h4 {
+    position: relative;
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: -2.02px;
+    margin: 80px auto 140px;
+    border-radius: 16px;
+    background-color: transparent;
+    z-index: 1;
+    padding: 20px;
+    max-width: 69%;
+
+    @media($portrait-tablets) {
+      font-size: 30px;
+      margin: 80px auto 100px;
+    }
+
+    @media($tablets) {
+      max-width: 80%;
+    }
+
+    @media($portrait-phones) {
+      max-width: 95%;
+      font-size: 24px;
+      margin: 50px auto 80px;
+      padding: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1.5px;
+      background: $clr-primary-gradient;
+      border-radius: inherit;
+      text-transform: capitalize;
+      -webkit-mask:
+        linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+  }
+
+  .hero-img-two {
+    display: block;
+
+    @media($portrait-tablets) {
+      max-width: 70%;
+      margin: 0px auto;
+    }
+  }
+
+  .bs-sec-two {
+    position: relative;
+
+    @media($portrait-tablets) {
+      margin: 50px 0 0;
+    }
+
+    h6 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: 3.03px;
+      margin: 0px 0 27px 0;
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h5 {
+      color: $clr-primary;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 1.1;
+      margin: 0px 0 18px 0;
+
+      @media($portrait-phones) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      color: $clr-primary;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.3;
+      margin: 0px 0 27px 0;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .btn {
+      font-size: 20px;
+      line-height: 1;
+      width: 305px;
+
+      @media($portrait-phones) {
+        width: 245px;
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+/*banner section end*/
+
+/*guarantee section start*/
+.guarantee-sec {
+  position: relative;
+  margin: 0 0 80px;
+  overflow: hidden;
+
+  @media($portrait-tablets) {
+    margin: 0 0 50px;
+  }
+
+  .gs-lists {
+    background-color: $clr-dark-gray;
+    padding: 24px 24px 24px 20px;
+    border-radius: 14px;
+    gap: 24px;
+
+    @media($portrait-tablets) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    h5 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0px 0px 0px 0;
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media($portrait-tablets) {
+        width: 100%;
+      }
+
+      @media($portrait-phones) {
+        text-align: center;
+      }
+    }
+
+    .gs-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @media($portrait-tablets) {
+        width: 23%;
+        align-items: start;
+      }
+
+      @media($tablets) {
+        width: 48%;
+      }
+
+      @media($portrait-phones) {
+        width: 100%;
+      }
+
+      img {
+        width: 46px;
+        display: block;
+        height: 46px;
+      }
+
+      h6 {
+        font-family: 'New Rail Alphabet';
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 0px 0;
+        padding: 8px 0;
+
+        @media($portrait-tablets) {
+          padding: 0px 0;
+        }
+
+        span {
+          display: block;
+          font-size: 16px;
+          margin: 6px 0 0;
+          color: $clr-secondary;
+        }
+      }
+    }
+  }
+}
+
+/*guarantee section end*/
+
+
+/*as seen in section start*/
+.as-seen-sec {
+  position: relative;
+  margin: 0 0 0px;
+  overflow: hidden;
+
+  .ass-lists {
+    padding: 0 36px;
+
+    @media($portrait-tablets) {
+      padding: 0;
+    }
+
+    h5 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 700;
+      font-size: 24.27px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      margin: 0px 100px 0px 0;
+      color: $clr-primary;
+
+      @media($portrait-tablets) {
+        margin: 0px 30px 0px 0;
+      }
+
+      @media($tablets) {
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px 20px 0;
+      }
+
+      @media($portrait-phones) {
+        margin: 0px 0px 30px 0;
+      }
+    }
+
+    .ass-item {
+      @media($tablets) {
+        width: 20%;
+        padding: 0 10px;
+      }
+
+      @media($portrait-phones) {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+/*as seen in section end*/
+
+
+/*product section start*/
+.product-sec {
+  position: relative;
+  padding: 92px 0;
+  overflow: hidden;
+
+  @media($portrait-phones) {
+    padding: 60px 0;
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.1;
+    margin: 0px 0 8px 0;
+
+    @media($portrait-phones) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 1.2;
+    text-align: justify;
+    margin: 20px 0 30px 0;
+
+
+  }
+
+  .rate-star {
+    gap: 4px;
+
+    img {
+      width: 13px;
+      height: 13px;
+
+      &.icon-half {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    span {
+      color: $clr-primary;
+      font-size: 13px;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      line-height: 1.1;
+      margin-left: 2px;
+    }
+  }
+
+  h5 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.1;
+    margin: 0px 0 0px 0;
+  }
+
+  .choose-flavor {
+    margin: 0 0 30px;
+
+    h5 {
+      margin: 0px 0 18px 0;
+    }
+  }
+
+  .most-popular {
+    gap: 10px;
+    margin: 0 0 24px;
+
+    .mp-item {
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid #B8B8B8;
+
+      .mp-title {
+        padding: 15px 32px 15px 22px;
+
+        @media($portrait-phones) {
+          flex-wrap: wrap;
+        }
+      }
+
+      h5 {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        color: $white;
+        font-family: 'New Rail Alphabet';
+        font-size: 20.23px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        background: $clr-secondary-gradient;
+      }
+
+      .custom-radio {
+        @media($portrait-phones) {
+          min-width: 16px;
+        }
+
+        .radio-circle {
+          border-color: $clr-yellow;
+        }
+
+        .radio-label {
+          color: $clr-primary;
+          font-family: 'New Rail Alphabet';
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 1.1;
+          margin-left: 10px;
+
+          @media($portrait-phones) {
+            max-width: 90%;
+          }
+        }
+      }
+
+      h6 {
+        color: $clr-primary;
+        font-family: 'New Rail Alphabet';
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.1;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media($portrait-phones) {
+          margin: 15px 0 0 26px;
+        }
+
+        span {
+          color: $clr-dark-silver;
+          text-decoration: line-through;
+        }
+      }
+
+      .mp-body {
+        position: relative;
+        border-top: 1px solid $clr-dark-silver;
+        padding: 24px 0 0;
+        margin: 0 32px 35px 50px;
+
+        h6 {
+          color: $clr-primary;
+          font-family: 'New Rail Alphabet';
+          font-size: 16.18px;
+          line-height: 1.1;
+          font-weight: 700;
+          margin: 0 0 14px;
+        }
+
+        .img {
+          padding: 22px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 6px;
+          border: 1px solid $clr-dark-silver;
+          height: 220px;
+
+          p {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            color: #6F7577;
+            font-family: 'New Rail Alphabet';
+            font-size: 16.18px;
+            line-height: 1.1;
+            font-weight: 300;
+            margin: 0;
+
+            span {
+              font-weight: 700;
+              color: #D0AF80;
+            }
+          }
+        }
+
+        ul {
+          margin: 28px 0 0;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          li {
+            display: flex;
+            align-items: center;
+            color: $clr-primary;
+            font-family: 'New Rail Alphabet';
+            font-size: 15.16px;
+            line-height: 1.1;
+            font-weight: 300;
+            gap: 6px;
+
+            @media($portrait-phones) {
+              align-items: start;
+            }
+
+            strong {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+
+    .icon {
+      font-size: small;
+      margin-left: 10px;
+    }
+  }
+
+  .product-slider {
+    position: relative;
+    background-color: $clr-dark-gray;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .img-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      img {
+        display: block;
+        position: relative;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .thumbnail-slider {
+    margin: 30px 0 0;
+
+    .img-child {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: $clr-dark-gray;
+
+      &:hover {
+        box-shadow: 0 0 0 1px $clr-yellow;
+
+        img {
+          transform: scale(1.05);
+        }
+      }
+
+      img {
+        display: block;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .sliderArrows,
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 28px 20px;
+    z-index: 0;
+  }
+
+  .slick-dots {
+    left: 100px;
+    right: 100px;
+    padding: 0;
+    z-index: 1;
+    margin: 0px 0 40px;
+  }
+}
+
+/*product in section end*/
+
+
+/*info section start*/
+.info-sec {
+  position: relative;
+  margin: 0 0 113px;
+  overflow: hidden;
+
+  @media($portrait-tablets) {
+    margin: 0 0 90px;
+  }
+
+  .is-lists {
+    padding: 0;
+
+    @media($portrait-tablets) {
+      div {
+        width: 33.33%;
+      }
+    }
+
+    @media($tablets) {
+      gap: 30px;
+
+      div {
+        width: 30.33%;
+      }
+    }
+
+    @media($portrait-phones) {
+      gap: 15px;
+
+      div {
+        width: 46%;
+      }
+    }
+
+    h6 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.1;
+      text-transform: capitalize;
+      margin: 0 0 0 15px;
+      color: $clr-primary;
+    }
+  }
+}
+
+/*info section end*/
+
+
+/*product info section start*/
+.product-info-sec {
+  position: relative;
+  margin: 0 0 90px;
+  overflow: hidden;
+
+  @media($tablets) {
+    margin: 0 0 60px;
+  }
+
+  .img-product {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1.33px;
+    margin: 0px 0 40px;
+
+    @media($tablets) {
+      margin: 50px 0 30px;
+    }
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 3.03px;
+      margin: 24px 0 0;
+    }
+  }
+
+  .pis-list {
+    background-color: $clr-extra-light-gray;
+    position: relative;
+    padding: 20px 24px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba($black, 0.25);
+    display: flex;
+    align-items: start;
+    margin: 0 0 0px;
+    gap: 20px;
+    height: 100%;
+
+    h5 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.1;
+      margin: 0 0 8px 0px;
+      color: $clr-secondary;
+    }
+
+    p {
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 16.18px;
+      line-height: 1.2;
+      margin: 0 0 0 0px;
+      color: $clr-secondary;
+    }
+  }
+
+  .btn {
+    width: 175px;
+    margin: 50px 0 0;
+  }
+}
+
+/*product info section end*/
+
+
+/*subscribe section start*/
+.subscribe-sec {
+  position: relative;
+  margin: 0 0 90px;
+  overflow: hidden;
+
+  .ss-desc {
+    position: relative;
+    border-radius: 16px;
+    background: url(../images/subscribe-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 60px 72px;
+
+    @media($tablets) {
+      padding: 40px 55px;
+    }
+
+    @media($portrait-phones) {
+      padding: 40px 25px;
+      background-position: 65%;
+    }
+
+    h5 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 0px 0px 0px 0;
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+      color: $clr-primary;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 41.43px;
+      line-height: 1.2;
+      margin: 54px 0 20px;
+
+      @media($tablets) {
+        font-size: 30px;
+        margin: 35px 0 20px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .badges-lists {
+      font-family: 'New Rail Alphabet';
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 6px;
+      margin: 0 0 54px;
+
+      @media($tablets) {
+        margin: 0 0 40px;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1;
+        text-transform: uppercase;
+        background-color: $clr-silver;
+        color: $clr-primary;
+        padding: 10px 16px;
+        border-radius: 38px;
+        display: inline-block;
+
+        @media($tablets) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .btn {
+      width: 270px;
+
+      @media($tablets) {
+        width: 200px;
+      }
+    }
+  }
+}
+
+/*subscribe section end*/
+
+
+/*people mind section end*/
+.people-mind-sec {
+  position: relative;
+  margin: 0 0 90px;
+  overflow: hidden;
+
+  @media($tablets) {
+    margin: 0 0 60px;
+  }
+
+  .pms-desc {
+    padding-right: 75px;
+
+    @media($tablets) {
+      padding-right: 0;
+    }
+
+    @media ($portrait-phones) {
+      text-align: center;
+    }
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0 0 15px;
+    text-align: left;
+
+    @media ($portrait-phones) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $clr-secondary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0px 0 50px;
+    text-align: left;
+
+    @media($tablets) {
+      margin: 0px 0 40px;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 18px;
+      margin: 0px 0 30px;
+    }
+  }
+
+  .pm-list {
+    position: relative;
+    gap: 40px;
+    margin: 0 0 46px;
+
+    @media($tablets) {
+      margin: 0px 0 30px;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      width: 46px;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 72.94px;
+      line-height: 1;
+      margin: 0px 0px 0px 0;
+      color: rgba($clr-primary, .20);
+    }
+
+    h5 {
+      font-family: 'New Rail Alphabet';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.1;
+      margin: 5px 0px 0px 0;
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0 0;
+      line-height: 1.3;
+      text-align: left;
+    }
+  }
+
+  .btn {
+    margin: 40px 0 0;
+    padding-inline: 38px;
+
+    @media($tablets) {
+      margin: 20px auto 40px;
+    }
+
+    @media ($portrait-phones) {
+      padding-inline: 15px;
+      margin: 0px 0 40px;
+    }
+
+    .icon {
+      margin-left: 62px;
+
+      @media ($portrait-phones) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .video-bx {
+    position: relative;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 712px;
+    overflow: hidden;
+
+    @media ($portrait-phones) {
+      height: 465px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      opacity: .15;
+      background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+      ;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .icon-play {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $clr-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      font-size: 20px;
+      background-color: $white;
+      transition: all .3s;
+
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      @media ($portrait-phones) {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*people mind section end*/
+
+
+/*count section start*/
+.count-sec {
+  position: relative;
+  background: url(../images/count-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 56px 0;
+  overflow: hidden;
+
+  .cs-lists {
+    font-family: 'New Rail Alphabet';
+    gap: 85px;
+
+    @media ($portrait-tablets) {
+      gap: 38px;
+    }
+
+    @media ($portrait-phones) {
+      gap: 25px;
+    }
+
+    .rw-45 {
+      @media ($tablets) {
+        width: 45%;
+      }
+
+      @media ($portrait-phones) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    h4 {
+      color: $white;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1;
+      margin: 0 0 20px;
+
+      @media ($portrait-phones) {
+        font-size: 30px;
+        margin: 0 0 15px;
+      }
+    }
+
+    p {
+      color: $white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.3;
+      margin: 0px 0 0px;
+
+      @media ($portrait-phones) {
+        text-align: center;
+      }
+
+      &.max-80 {
+        max-width: 80%;
+
+        @media ($portrait-phones) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*count section end*/
+
+
+/*choice section start*/
+.choice-sec {
+  position: relative;
+  padding: 130px 0 95px;
+  overflow: hidden;
+
+  @media ($portrait-tablets) {
+    padding: 100px 0 65px;
+  }
+
+  h4 {
+    position: relative;
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40.45px;
+    line-height: 1.3;
+    margin: 0px auto 57px;
+    text-align: center;
+    max-width: 70%;
+
+    @media ($portrait-tablets) {
+      max-width: 100%;
+      margin: 0px auto 40px;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 30px;
+    }
+
+    &:before {
+      content: "---";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $clr-primary;
+      font-size: 40px;
+      line-height: 1.25;
+      margin-bottom: 40px;
+
+      @media ($portrait-tablets) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .btn {
+    margin: 66px auto 0;
+    width: 260px;
+
+    @media ($portrait-tablets) {
+      margin: 40px auto 0;
+    }
+
+    @media ($portrait-phones) {
+      width: 200px;
+    }
+  }
+}
+
+/*choice section end*/
+
+/*choice section start*/
+.video-sec {
+  position: relative;
+  padding: 0 0 110px;
+  overflow: hidden;
+
+  @media ($portrait-tablets) {
+    padding: 0 0 60px;
+  }
+
+  .video-bx {
+    position: relative;
+    border-radius: 14px;
+    display: flex;
+    height: 656px;
+    overflow: hidden;
+    margin: 0 0 64px;
+
+    @media ($portrait-tablets) {
+      margin: 0 0 30px;
+      height: 400px;
+    }
+
+    @media ($portrait-phones) {
+      margin: 0 0 20px;
+      height: 250px;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .icon-play {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      font-size: 22px;
+      background-color: $clr-yellow;
+      transition: all .3s;
+
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      @media ($portrait-phones) {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+      }
+
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40.45px;
+    line-height: 1.1;
+    margin: 0px 0 32px;
+
+    @media ($portrait-tablets) {
+      margin: 0 0 20px;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0px;
+
+    @media ($portrait-phones) {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    i {
+      margin-left: 62px;
+    }
+  }
+}
+
+/*choice section end*/
+
+
+/*testimonial section start*/
+.testimonial-sec {
+  position: relative;
+  padding: 90px 0;
+  background-color: #F0EFEB;
+  overflow: hidden;
+
+  @media ($portrait-tablets) {
+    padding: 60px 0;
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0px 0 12px;
+
+    @media ($portrait-phones) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0px;
+
+    @media ($portrait-phones) {
+      font-size: 18px;
+    }
+  }
+
+  .ts-lists {
+    position: relative;
+    margin: 32px 0 0;
+
+    .ts-item {
+      background-color: $clr-light-silver;
+      padding: 32px;
+      border-radius: 12px;
+      display: block;
+      position: relative;
+
+      .rate-icons {
+        gap: 4px;
+        font-size: 20px;
+        color: $clr-light-green;
+      }
+
+      p {
+        color: $clr-primary;
+        font-family: 'New Rail Alphabet';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 24px 0px;
+      }
+
+      .ts-user-info {
+        gap: 20px;
+
+        .img {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        h6 {
+          color: $clr-primary;
+          font-family: 'New Rail Alphabet';
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.6;
+          margin: 0px;
+
+          span {
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+
+  .sliderArrows {
+    @media ($portrait-phones) {
+      margin: 30px 0 0;
+    }
+  }
+}
+
+/*testimonial section end*/
+
+/*faq section end*/
+.faq-sec {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+
+  @media ($portrait-phones) {
+    padding: 55px 0;
+  }
+
+  .accordion {
+    @media ($portrait-tablets) {
+      margin: 50px 0 0;
+    }
+  }
+
+  h4 {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0px 0 0px;
+
+    @media ($portrait-phones) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 24px 0px 32px;
+
+    @media ($portrait-phones) {
+      line-height: 1.4;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 18px;
+      margin: 20px 0px 30px;
+    }
+  }
+
+  .btn {
+    .icon {
+      margin-left: 62px;
+    }
+  }
+
+  .lnk-see-all {
+    text-align: center;
+    color: $clr-primary;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 8px 0 0;
+
+    &:hover {
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    i {
+      margin-left: 8px;
+      font-size: 16px;
+    }
+  }
+}
+
+/*faq section end*/
+
+
+/*newsetter section start*/
+.newsetter-sec {
+  position: relative;
+  margin: 0 0 95px;
+  overflow: hidden;
+
+  @media($portrait-tablets) {
+    margin: 0 0 65px;
+  }
+
+  .ns-desc {
+    position: relative;
+    border-radius: 14px;
+    background: url(../images/newsletter-bg.png) no-repeat top;
+    background-size: cover;
+    padding: 80px 30px 260px;
+
+    @media($portrait-tablets) {
+      padding: 60px 30px 200px;
+    }
+
+    @media($portrait-phones) {
+      padding: 80px 30px 160px;
+    }
+
+    h4 {
+      color: $white;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 42.32px;
+      line-height: 1.2;
+      margin: 0 60px 28px;
+
+      @media($portrait-tablets) {
+        margin: 0 20px 28px;
+        font-size: 38px;
+        line-height: 1.4;
+      }
+
+      @media($portrait-phones) {
+        font-size: 30px;
+        margin: 0 0px 28px;
+      }
+    }
+
+    p {
+      color: $white;
+      font-family: 'New Rail Alphabet';
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 0 0 28px;
+
+      @media($portrait-phones) {
+        font-size: 18px;
+      }
+    }
+
+    .form-control-outline {
+      max-width: 71%;
+      margin: 0 auto 18px;
+
+      @media($portrait-phones) {
+        max-width: 100%;
+      }
+    }
+
+    .btn {
+      width: 230px;
+
+      @media($portrait-phones) {
+        width: 200px;
+      }
+
+      .icon {
+        font-size: small;
+      }
+    }
+  }
+}
+
+/*newsetter section end*/

@@ -1,0 +1,86 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 42px;
+  height: 42px;
+  color: $black;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 18.2px;
+  line-height: 16.18px;
+  border: 0;
+  font-family: 'New Rail Alphabet';
+  white-space: nowrap;
+  padding: 0 24px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  .icon {
+    font-size: smaller;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+
+  &.btn-gradient {
+    background: $clr-primary-gradient;
+    color: $black;
+
+    &:hover {
+      background: $clr-primary-gradient-hover;
+      color: $clr-primary;
+      transform: scale(1.01);
+
+      .icon {
+        transform: translateX(5px);
+        opacity: .90;
+      }
+    }
+  }
+
+  &.btn-white {
+    background: $white;
+    color: $clr-accent;
+
+    &:hover {
+      background: $clr-primary-gradient-hover;
+      color: $clr-primary;
+      transform: scale(1.01);
+
+      .icon {
+        transform: translateX(5px);
+        opacity: .90;
+      }
+    }
+  }
+
+  &.btn-green {
+    background: $clr-accent;
+    color: $white;
+
+    &:hover {
+      background: $clr-primary-gradient-hover;
+      color: $clr-primary;
+      transform: scale(1.01);
+
+      .icon {
+        transform: translateX(5px);
+        opacity: .90;
+      }
+    }
+  }
+
+}
+
+button {
+  outline: 0;
+  box-shadow: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

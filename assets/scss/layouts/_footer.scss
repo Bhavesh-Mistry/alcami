@@ -1,0 +1,165 @@
+footer {
+  background-color: $clr-primary;
+  position: relative;
+  padding: 60px 0;
+
+  @media ($tablets) {
+    padding: 60px 0 30px;
+  }
+
+  .btnBacktotop {
+    background: $clr-primary-gradient-hover;
+    border: 0;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-decoration: none;
+    transition: 0.2s all;
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    border: 0;
+    transition: .3s all;
+
+    @media ($portrait-phones) {
+      bottom: 50px;
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      color: $white;
+    }
+
+  }
+
+  .f-logo {
+    display: inline-block;
+
+    @media ($portrait-phones) {
+      margin: 0px 0 30px;
+    }
+  }
+
+  ul {
+    margin: 45px 0 0;
+
+    @media ($portrait-phones) {
+      margin: 15px 0 0;
+    }
+
+    li {
+      margin: 0 0 15px;
+      color: $white;
+      line-height: 1.4;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: $white;
+        font-family: "Oxanium", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 14.16px;
+        line-height: 1.2;
+        text-align: left;
+        text-decoration: none;
+        transition: .3s all;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+          padding: 0 0 0 5px;
+          background: $clr-secondary-gradient;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: $white;
+          margin: 0 15px 0 0;
+        }
+      }
+
+
+    }
+  }
+
+  p {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 12.14px;
+    line-height: 1.2;
+    text-align: left;
+    color: $white;
+    margin: 16px 0 0;
+
+    &.copyright {
+      margin: 55px 0 0;
+      font-family: "Oxanium", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-size: 16.18px;
+      line-height: 1.2;
+      text-align: left;
+      background: $clr-secondary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media ($tablets) {
+        text-align: center;
+      }
+    }
+
+  }
+
+  h5 {
+    font-family: 'New Rail Alphabet';
+    font-weight: 700;
+    font-size: 16.18px;
+    line-height: 1.3;
+    color: $clr-yellow;
+    margin: 0 0 25px;
+
+    @media ($tablets) {
+      margin: 40px 0 25px;
+    }
+  }
+
+  input.form-control {
+    &.form-control-outline {
+      font-family: "Oxanium", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-size: 16.18px;
+    }
+  }
+
+  .btn {
+    margin: 0 0 0 16px;
+    min-width: 120px;
+    padding: 10px;
+    justify-content: center;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16.18px;
+
+    &.btn-white {
+      border-radius: 0;
+      height: 50px;
+      color: $clr-yellow;
+    }
+  }
+}

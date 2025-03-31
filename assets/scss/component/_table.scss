@@ -1,0 +1,82 @@
+.table {
+   font-family: 'New Rail Alphabet';
+
+   thead {
+      tr {
+         th {
+            color: $clr-primary;
+            font-family: 'New Rail Alphabet';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 16px 16px 30px;
+            border-color: $clr-secondary;
+
+            &:first-child {
+               text-align: left;
+               vertical-align: middle;
+            }
+
+            &:nth-child(2) {
+               border-top-left-radius: 16px;
+               border-top-right-radius: 16px;
+               background-color: $clr-light-yellow;
+            }
+
+            span {
+               color: $clr-secondary;
+               font-family: 'New Rail Alphabet';
+               font-weight: 300;
+               font-size: 12px;
+               line-height: 1.1;
+               display: block;
+               text-align: center;
+               text-transform: uppercase;
+               margin: 24px 0 0 0;
+            }
+         }
+      }
+   }
+
+   tbody {
+      font-family: 'New Rail Alphabet';
+
+      tr {
+         th {
+            padding: 16px;
+            border-color: $clr-secondary;
+            font-weight: 700;
+            color: $clr-secondary;
+            text-align: left;
+            vertical-align: middle;
+         }
+
+         td {
+            vertical-align: middle;
+            border-color: $clr-secondary;
+            padding: 16px;
+            text-align: center;
+            color: $clr-secondary;
+            font-family: 'New Rail Alphabet';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.1;
+
+            &:nth-child(2) {
+               background-color: $clr-light-yellow;
+            }
+         }
+
+         &:last-child {
+            td {
+               &:nth-child(2) {
+                  border-bottom-left-radius: 16px;
+                  border-bottom-right-radius: 16px;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,365 @@
+header {
+   &.navbar {
+      flex-direction: column;
+      background-color: transparent;
+      padding: 0 0 16px 0;
+      transition: all .3s;
+      z-index: 99;
+
+      .top-bar {
+         background-color: $clr-primary;
+         padding: 16.5px 16px;
+         color: $white;
+         font-weight: 300;
+         font-size: 14.16px;
+         line-height: 1.2;
+         text-transform: uppercase;
+         margin: 0 0 16px;
+         display: block;
+         width: 100%;
+         transition: all .3s;
+
+         @media($portrait-phones) {
+            font-size: 12px;
+         }
+      }
+
+      &:hover {
+         background-color: $white;
+
+         .navbar-nav {
+            .nav-item {
+               .nav-link {
+                  color: $clr-primary;
+               }
+            }
+         }
+
+         .navbar-toggler {
+            color: $clr-primary;
+         }
+      }
+
+      &.darkHeader {
+         background-color: $white;
+         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+         padding-top: 16.5px;
+
+         @media($tablets) {
+            .navbar-collapse {
+               top: 60px;
+            }
+         }
+
+         @media($portrait-phones) {
+            padding: 15px 0;
+         }
+
+         .top-bar {
+            opacity: 0;
+            visibility: hidden;
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            line-height: 0;
+         }
+
+         .navbar-nav {
+            .nav-item {
+               .nav-link {
+                  color: $clr-primary;
+               }
+            }
+         }
+
+         .navbar-toggler {
+            color: $clr-primary;
+         }
+
+         .navbar-collapse {
+            @media($portrait-phones) {
+               top: 60px;
+            }
+         }
+      }
+
+      .navbar-brand {
+         margin: 0;
+         padding: 0;
+         transition: all .5s;
+
+         img {
+            transition: all .5s;
+         }
+      }
+
+      .navbar-toggler {
+         padding: 0;
+         position: relative;
+         color: $clr-primary;
+         line-height: 1;
+         margin-left: auto;
+         background-color: transparent;
+         border: 0;
+         margin-right: 10px;
+
+         &:focus {
+            box-shadow: none;
+            outline: none;
+         }
+      }
+
+      .navbar-nav {
+         z-index: 1;
+
+         .nav-item {
+            margin: 0 20px;
+            overflow: hidden;
+
+            @media($portrait-tablets) {
+               margin: 0 10px;
+            }
+
+            &:last-child {
+               margin-right: 0;
+            }
+
+            &.dropdown {
+               overflow: inherit;
+
+               .dropdown-menu {
+                  border: 0;
+                  padding: 0px 0;
+                  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+
+                  .dropdown-item {
+                     padding: 15px 20px;
+                     color: $clr-primary;
+                     font-family: 'New Rail Alphabet';
+                     font-size: 16px;
+                     line-height: 1;
+                     font-weight: 300;
+
+                     &:hover {
+                        background: $clr-secondary-gradient ;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                     }
+                  }
+               }
+            }
+
+            .nav-link {
+               font-size: 16.18px;
+               line-height: 1.5;
+               letter-spacing: 0px;
+               padding-left: 0;
+               padding-right: 0;
+               font-weight: 300;
+               color: $clr-primary;
+               position: relative;
+               transition: all 0.35s ease;
+
+               &:before {
+                  position: absolute;
+                  -webkit-transition: all 0.35s ease;
+                  transition: all 0.35s ease;
+                  bottom: 100%;
+                  display: block;
+                  height: 3px;
+                  left: 0;
+                  width: 100%;
+                  content: "";
+                  background: $clr-primary-gradient;
+
+                  @media ($tablets) {
+                     display: none;
+                  }
+               }
+
+               &:after {
+                  position: absolute;
+                  -webkit-transition: all 0.35s ease;
+                  transition: all 0.35s ease;
+                  padding: .5rem 0;
+                  letter-spacing: 0px;
+                  position: absolute;
+                  bottom: 100%;
+                  left: 0;
+                  content: attr(data-hover);
+                  color: $clr-primary;
+                  white-space: nowrap;
+
+                  @media ($tablets) {
+                     display: none;
+                  }
+               }
+
+               &:hover,
+               &.active {
+                  background: $clr-secondary-gradient ;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  transform: translateY(100%);
+
+                  &::after {
+                     background: $clr-secondary-gradient ;
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                  }
+
+                  @media ($tablets) {
+                     transform: inherit;
+                  }
+               }
+
+               &.dropdown-toggle {
+                  .icon {
+                     font-size: 12px;
+                  }
+
+                  &:before,
+                  &:after {
+                     display: none;
+                  }
+
+                  &:hover,
+                  &.active {
+                     transform: inherit;
+                  }
+
+                  &.show {
+                     .icon {
+                        background: $clr-secondary-gradient ;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .navbar-collapse {
+         transition: all .3s;
+         position: relative;
+
+         .mobile-search {
+            position: relative;
+            padding: 15px 35px;
+            border-bottom: 1px solid $white;
+
+            .form-control {}
+
+            .btn-search {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               right: 50px;
+               padding: 0;
+            }
+
+            @media($portrait-phones) {
+               padding: 15px;
+            }
+         }
+
+         @media($tablets) {
+            position: absolute;
+            top: 115px;
+            left: 0;
+            right: 0;
+            background-color: $clr-primary;
+            border-top: 3px solid $clr-yellow;
+            z-index: 99;
+
+            .navbar-nav {
+               margin: 0;
+
+               .nav-item {
+                  margin: 0 0px;
+
+                  .nav-link {
+                     padding: 15px 35px;
+                     border-bottom: 1px solid $white;
+                     color: $white;
+
+                     &.dropdown-toggle {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                     }
+
+                     @media($portrait-phones) {
+                        padding: 15px;
+                     }
+
+                     &:hover,
+                     &.active {
+                        background-color: $clr-primary;
+                        color: $white;
+                     }
+                  }
+
+                  &.dropdown {
+                     .dropdown-menu {
+                        margin: 0 35px;
+                     }
+                  }
+               }
+            }
+
+            .btn-try {
+               margin: 15px 35px;
+            }
+         }
+
+         @media($portrait-phones) {
+            top: 110px;
+
+            .btn-try {
+               margin: 15px 15px;
+            }
+         }
+      }
+
+      .btn-try {
+         width: 175px;
+         margin-left: 40px;
+      }
+
+      .h-search-box {
+         position: absolute;
+         right: 190px;
+         left: 75px;
+         z-index: 0;
+
+         input {
+            position: absolute;
+            width: 0;
+            opacity: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            transition: width 0.3s ease, opacity 0.3s ease;
+         }
+
+         &:focus-within {
+            position: absolute;
+            z-index: 1;
+
+            input {
+               width: 95%;
+               opacity: 1;
+               padding: 5px 24px;
+               margin-right: 40px;
+            }
+         }
+
+         .btn-search {
+            padding: 0;
+            height: auto;
+         }
+      }
+   }
+}
